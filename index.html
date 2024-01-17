@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family:'Times New Roman', Times, serif;
+        }
+        
+        .form{
+            background-color: #D2E59E;
+            padding: 2% 2.5%;
+            margin: 0 20%;
+            border-radius: 2.5%;
+        }
+
+        .name{
+            width: 90%;
+            height: 6vh;
+            border: none;
+            margin-top: 1%;
+            padding-right: 5%;
+            padding-left: 5%;
+            border-bottom: 3px solid #333;
+            outline: none;
+        }
+        .name:hover{
+            outline: none;
+            border-bottom: 3px solid #589167;
+        }
+        .message{
+            width: 90%;
+            height: 13vh;
+            border: none;
+            outline: none;
+            resize: none;
+            margin-top: 1%;
+            padding-right: 5%;
+            padding-left: 5%;
+            border-bottom: 3px solid #333;
+
+        }
+        .message:hover{         
+            outline: none;
+            border-bottom: 3px solid #589167;
+        }
+        .Button{
+            box-sizing: border-box;
+            margin-top: -1.5em;
+            margin-bottom: 2em;
+            text-align: center;
+        }
+        .submit{
+            
+            border: none;
+            height: 3.5em;
+            width: 8em;
+            margin: 8% 3% 0 0;
+            background-color: #0A66C2;
+            border-radius: 5%;
+            
+        }
+        .cancel{
+            border: none;
+            height: 3.5em;
+            width: 8em;
+            margin: 0 0 0 3%;
+            background-color:aliceblue;
+            border-radius: 5%;
+        }
+        .holder{
+            display: block;
+            text-align: left;
+            letter-spacing: 0.25em;
+            margin: 10px 0px 0px 20px;
+        }
+        .holder:hover{
+            font-size: 110%;
+            text-decoration: double;
+        }
+        .submit:hover{
+            background-color: #0a66c2da;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+        .cancel:hover{
+            background-color:rgba(240, 248, 255, 0.856);
+            font-weight: 600;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+        <form class="form" action="">
+
+            <label for="Name" class="holder">Name</label>
+            <input type="text" id="Name" class="name"> 
+
+
+            <label for="email" class="holder">Email</label>
+            <input type="email" id="email" class="name">
+
+
+            <label for="password" class="holder">Password</label>
+            <input type="password" id="password" class="name">
+
+
+            <label for="number" class="holder">Number</label>
+            <input type="number" id="number" class="name">
+
+
+            <label for="Message" class="holder">Message</label>
+            <textarea name="message" class="message"></textarea><br>
+
+            <div class="Button">
+
+                <button class="submit">SUBMIT</button>
+                <button class="cancel">CANCEL</button>
+
+            </div>
+        </form>
+    </div>
+</body>
+</html>
